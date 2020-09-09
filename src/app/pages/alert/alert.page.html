@@ -1,0 +1,11 @@
+<app-header [titulo]="this.name || 'Alert'"></app-header>
+
+<ion-content class="ion-padding" fullscreen>
+
+  <ion-button (click)="presentAlert()" color="primary" expand="full" class="ion-text-uppercase">Mostrar Alerta
+  </ion-button>
+
+  <ion-button (click)="presentInput()" color="secondary" expand="full" class="ion-text-uppercase">Mostrar Input
+  </ion-button>
+
+</ion-content>

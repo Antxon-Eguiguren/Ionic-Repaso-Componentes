@@ -1,0 +1,18 @@
+<app-header titulo="infinite scroll"></app-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item *ngFor="let item of data, index as position">
+      <ion-label>Item {{position +1}}</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-infinite-scroll threshold="150px" (ionInfinite)="loadData($event)">
+    <ion-infinite-scroll-content loadingSpinner="crescent" loadingText="Cargando...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+
+  <ion-label *ngIf="finished">No hay más productos.</ion-label>
+
+</ion-content>

@@ -1,0 +1,110 @@
+<app-header titulo="checkbox, radio and select"></app-header>
+
+<ion-content class="ion-padding" fullscreen>
+
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Checkboxes</ion-label>
+    </ion-list-header>
+    <ion-item (click)="onClickCheckbox(check)" *ngFor="let check of checkboxes">
+      <ion-label class="ion-text-capitalize">{{check.name}}</ion-label>
+      <ion-checkbox [(ngModel)]="check.selected" color={{check.name}}></ion-checkbox>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-radio-group value="Biff">
+      <ion-list-header>
+        <ion-label>Radio Buttons</ion-label>
+      </ion-list-header>
+
+      <ion-item (click)="onClickRadio(radio)" *ngFor="let radio of radios">
+        <ion-label>{{radio.name}}</ion-label>
+        <ion-radio slot="start" value={{radio.name}}></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+
+  <ion-list-header>
+    <ion-label>
+      Selects
+    </ion-label>
+  </ion-list-header>
+
+  <ion-list>
+    <ion-list-header>
+      <ion-label>
+        Single Selection
+      </ion-label>
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>Gender</ion-label>
+      <ion-select placeholder="Select One" [(ngModel)]="gender" (ionChange)="onChangeSelectSingle(gender)">
+        <ion-select-option value="f">Female</ion-select-option>
+        <ion-select-option value="m">Male</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Hair Color</ion-label>
+      <ion-select value="brown" okText="Okay" cancelText="Dismiss" [(ngModel)]="hair"
+        (ionChange)="onChangeSelectSingle(hair)">
+        <ion-select-option value="brown">Brown</ion-select-option>
+        <ion-select-option value="blonde">Blonde</ion-select-option>
+        <ion-select-option value="black">Black</ion-select-option>
+        <ion-select-option value="red">Red</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header>
+      <ion-label>
+        Multiple Selection
+      </ion-label>
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>Toppings</ion-label>
+      <ion-select multiple="true" cancelText="Nah" okText="Okay!" [(ngModel)]="toppings"
+        (ionChange)="onChangeSelectMultiple(toppings)">
+        <ion-select-option value="bacon">Bacon</ion-select-option>
+        <ion-select-option value="olives">Black Olives</ion-select-option>
+        <ion-select-option value="xcheese">Extra Cheese</ion-select-option>
+        <ion-select-option value="peppers">Green Peppers</ion-select-option>
+        <ion-select-option value="mushrooms">Mushrooms</ion-select-option>
+        <ion-select-option value="onions">Onions</ion-select-option>
+        <ion-select-option value="pepperoni">Pepperoni</ion-select-option>
+        <ion-select-option value="pineapple">Pineapple</ion-select-option>
+        <ion-select-option value="sausage">Sausage</ion-select-option>
+        <ion-select-option value="Spinach">Spinach</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Pets</ion-label>
+      <ion-select multiple="true" [(ngModel)]="pets" (ionChange)="onChangeSelectMultiple(pets)">
+        <ion-select-option value="bird">Bird</ion-select-option>
+        <ion-select-option value="cat">Cat</ion-select-option>
+        <ion-select-option value="dog">Dog</ion-select-option>
+        <ion-select-option value="honeybadger">Honey Badger</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header>
+      <ion-label>
+        Toggle
+      </ion-label>
+    </ion-list-header>
+
+    <ion-item *ngFor="let toggle of toggles" (click)="onClickToggle(toggle)">
+      <ion-label>{{toggle.name}}</ion-label>
+      <ion-toggle [(ngModel)]="toggle.selected" checked={{toggle.checked}} disabled={{toggle.disabled}}></ion-toggle>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

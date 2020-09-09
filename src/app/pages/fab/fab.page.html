@@ -1,0 +1,43 @@
+<app-header titulo="FAB"></app-header>
+
+<ion-content class="ion-padding" fullscreen>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+
+    <ion-fab-list side="top">
+      <ion-fab-button>
+        <ion-icon color="facebook" name="logo-facebook"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon color="twitter" name="logo-twitter"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon color="youtube" name="logo-youtube"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+
+    <ion-fab-list side="start">
+      <ion-fab-button>
+        <ion-icon color="vimeo" name="logo-vimeo"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon color="google" name="logo-google"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon color="github" name="logo-github"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+
+  </ion-fab>
+
+  <ion-list>
+    <ion-item *ngFor="let i of lista, index as position">
+      Item {{position + 1}}
+    </ion-item>
+  </ion-list>
+
+</ion-content>

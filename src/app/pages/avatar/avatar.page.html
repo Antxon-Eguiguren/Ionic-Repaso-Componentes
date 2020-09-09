@@ -1,0 +1,37 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>Avatar</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-avatar>
+        <img src="../../../assets/img/stan-lee.jpg">
+      </ion-avatar>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" fullscreen>
+
+  <ion-chip color="primary" *ngFor="let writer of writers">
+    <ion-label>{{writer.name}}</ion-label>
+    <ion-avatar>
+      <img src={{writer.photo}}>
+    </ion-avatar>
+  </ion-chip>
+
+  <ion-list>
+    <ion-item *ngFor="let writer of writers">
+      <ion-avatar slot="start">
+        <img src={{writer.photo}}>
+      </ion-avatar>
+      <ion-label>{{writer.name}}</ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

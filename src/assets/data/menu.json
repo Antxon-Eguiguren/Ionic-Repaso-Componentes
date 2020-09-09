@@ -1,0 +1,127 @@
+[
+    {
+        "icon": "finger-print-outline",
+        "name": "Action Sheet",
+        "path": "/action-sheet"
+    },
+    {
+        "icon": "paper-plane-outline",
+        "name": "Alert",
+        "path": "/alert"
+    },
+    {
+        "icon": "beaker-outline",
+        "name": "Avatar",
+        "path": "/avatar"
+    },
+    {
+        "icon": "airplane-outline",
+        "name": "Badge",
+        "path": "/badge"
+    },
+    {
+        "icon": "radio-button-on-outline",
+        "name": "Buttons and Router",
+        "path": "/buttons"
+    },
+    {
+        "icon": "card-outline",
+        "name": "Cards",
+        "path": "/card"
+    },
+    {
+        "icon": "checkmark-circle-outline",
+        "name": "Checkbox",
+        "path": "/checkbox"
+    },
+    {
+        "icon": "calendar-outline",
+        "name": "Date Time",
+        "path": "/date-time"
+    },
+    {
+        "icon": "car-outline",
+        "name": "FAB",
+        "path": "/fab"
+    },
+    {
+        "icon": "grid-outline",
+        "name": "Grid",
+        "path": "/grid"
+    },
+    {
+        "icon": "infinite-outline",
+        "name": "Infinite Scroll",
+        "path": "/infinite-scroll"
+    },
+    {
+        "icon": "hammer-outline",
+        "name": "Input",
+        "path": "/input"
+    },
+    {
+        "icon": "list-outline",
+        "name": "List Sliding",
+        "path": "/list"
+    },
+    {
+        "icon": "reorder-two-outline",
+        "name": "List Reorder",
+        "path": "/list-reorder"
+    },
+    {
+        "icon": "refresh-circle-outline",
+        "name": "Loading",
+        "path": "/loading"
+    },
+    {
+        "icon": "phone-portrait-outline",
+        "name": "Modal",
+        "path": "/modal"
+    },
+    {
+        "icon": "planet-outline",
+        "name": "Picker",
+        "path": "/picker"
+    },
+    {
+        "icon": "tablet-portrait-outline",
+        "name": "Popover",
+        "path": "/popover"
+    },
+    {
+        "icon": "code-working-outline",
+        "name": "Progress Bar and Range",
+        "path": "/progress-bar"
+    },
+    {
+        "icon": "arrow-down-outline",
+        "name": "Refresher",
+        "path": "/refresher"
+    },
+    {
+        "icon": "search-outline",
+        "name": "Search Bar",
+        "path": "/search-bar"
+    },
+    {
+        "icon": "copy-outline",
+        "name": "Segment",
+        "path": "/segment"
+    },
+    {
+        "icon": "albums-outline",
+        "name": "Slides",
+        "path": "/slides"
+    },
+    {
+        "icon": "cog-outline",
+        "name": "Tabs",
+        "path": "/tabs/account"
+    },
+    {
+        "icon": "text-outline",
+        "name": "Text",
+        "path": "/text"
+    }
+]
